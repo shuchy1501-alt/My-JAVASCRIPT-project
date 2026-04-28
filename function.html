@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <style>
+        h1{
+            color: rgb(89, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        //Function Decleration
+        // function fullName(firstName,lastName){
+        //       //let firstName="Shuchy";
+        //       //let lastName="Kabir";
+        //       //console.log(firstName+""+ lastName);
+        //       //console.log(`${firstName} ${lastName}`);
+        //       document.write(`<h1>Hello ${firstName}  ${lastName}!</h1>`);
+        // }
+        // fullName("Shuchy", "Kabir");
+        // fullName("Smrity", "Kabir");
+        // function add(a,b){
+        //     return(a+b);
+        // }
+        // function sub(a,b){
+        //     return(a-b);
+        // } 
+        // console.log(add(200,50),sub(200,50));
+        //   add(200,50);
+        //   sub(200,50);
+        //   function greet(name){
+        //     return `Assalamu Alaikum ${name}`;
+        //   }
+        //    console.log(greet("Shuchy"));
+        //    document.write(`<p>${greet("Shuchy")}</p>`);
+        //    function calculator(a,op,b){       //making calculator
+        //     if(op=="+"){
+        //         return a+b;
+        //     }else if(op=="-"){
+        //         return a-b;
+        //     }else if(op=="*"){
+        //         return a*b;
+        //     }else if(op=="/"){
+        //         return a/b;
+        //     }
+        //    }
+        // console.log(calculator(2000,"/",100));
+        // function greet(name="Guest"){         //default/optional parametr
+        //     return `Assalamu Alaikum ${name}`;
+        //   }
+        //   console.log(greet("Shuchy"));
+        //   console.log(greet());
+        //   document.write(`<p>${greet("Shuchy")}</p>`);
+
+        //   function totalcost(price,quantity){
+        //     return price*quantity;
+        //   }
+        //   console.log(`${totalcost(500,3)}tk`);
+        //     console.log(totalcost(500,3)+"tk");
+        //     price(500);
+        //     quantitity(3);
+        //same arrow function
+        // const abc = function (name){
+        //     return name;
+        // }
+        // const fullname=(firstName,lastName)=>{
+        //      return firstName + " "+ lastName;
+        //      return `${firstName} ${lastName}`;
+        // }
+        // console.log(fullname("Shuchy","Kabir"));
+        // console.log(abc("Shayan"));
+
+        // const fullname=(firstName,lastName)=>{
+        //return firstName + " " + lastName;
+    //}
+        // const fullname=(firstName,lastName)=>
+        // console.log(fullName("Shuchy","Kabir"));
+
+        // const fullname=(firstName,lastName)=> firstName + " " + lastName;
+        // console.log(fullName("Shuchy","Kabir"));
+
+        //cont fullName = fistName => firstName;
+        //console.log(fullName("Shuchy"));
+
+        const fullName = () => "Hello World";
+        console.log(fullName(""));
+        //callback function
+
+        function hello(name, Callback){
+            return `Hello ${name} ${Callback}`
+        }
+        function goTo(){
+            return "Go to your Room"
+        } 
+        console.log(hello("Hasan", goTo()));
+
+        function hello2(name, Callback){
+            return `Hello ${name} ${Callback()}`
+        }
+        let output = hello2("Masud", ()=>{return "Valo hoye jaw"})
+        console.log(output);
+        // Recursive Function
+        function start(){
+            setTimeout(() =>{
+                let date=new Date();
+                console.log(date.toLocaleTimeString())
+                start()
+            },1000);
+
+        }
+        start()
+        let time=5;
+        function cdf(name){
+            document.write(`${name}`);
+            time--;
+            if(time==0){
+                return;
+            }
+            cdf("Masud Hasan");
+        }
+        cdf("Masud Hasan");
+    </script>
+</body>
+</html>
