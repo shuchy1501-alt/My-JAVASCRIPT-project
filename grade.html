@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="output_id"></h1>
+    <!-- <label for="result">Enter Your Result</label><br><br>
+    <input type="text" name="result" id="result"><br><br>
+    <button id="btn">Submit</button>
+    <h1 id="output_id"></h1> -->
+    
+    <script>
+    //  document.getElementById("btn").onclick=function(){
+        //  let result=Number(document.getElementById("result").value);
+         let result = Number(prompt("Enter your number"));
+          let output=document.getElementById("output_id");
+         if(result>=80){
+            output.style.color="green";
+            output.innerText="A+";
+
+         }else if(result>=70){
+            output.style.color="green";
+            output.innerText="A";
+ 
+         }else if(result>=60){
+            output.style.color="green";
+            output.innerText="B";
+         }
+         else{
+             output.style.color="green";
+            output.innerText="Fail";
+         }
+
+    //  }
+    </script>
+</body>
+</html>
